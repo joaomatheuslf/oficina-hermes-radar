@@ -45,7 +45,7 @@ iex (irm https://raw.githubusercontent.com/joaomatheuslf/oficina-hermes-radar/ma
 ```
 
 O instalador baixa o projeto em `~/oficina-hermes-radar`, instala as 5 skills (`radar-squad`, `rss-feeds`, `grounded-citations`, `blocked-page-recovery` e `agent-reach`) e testa o coletor de feeds. Opções: `--sem-agent-reach`, `--perfil NOME` (instala num perfil separado do Hermes) e `--pasta CAMINHO`.
-Quer ler antes de rodar? Abra [`instalar.sh`](instalar.sh): são cerca de 80 linhas, em 6 passos numerados.
+Quer ler antes de rodar? Abra [`instalar.sh`](instalar.sh): são cerca de 90 linhas, em 6 passos numerados.
 
 > Testado no Linux. O instalador do Windows foi escrito mas **ainda não foi testado**; se falhar, use o passo a passo abaixo.
 
