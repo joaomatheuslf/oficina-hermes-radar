@@ -135,6 +135,17 @@ hermes gateway              # o gateway precisa estar ligado para o cron rodar
 ```
 Saídas ficam em `~/.hermes/cron/output/`. No Desktop, o mesmo agendamento está no painel de cron.
 
+## Como o Hermes aprende (e o que o radar usa disso)
+
+- **Memória:** duas anotações pequenas, `USER.md` (quem é você, até 1.375 caracteres) e `MEMORY.md` (fatos do ambiente, até 2.200), em `~/.hermes/memories/`. Entram no prompt no início de cada sessão; o que ele anota vale a partir da próxima (`/new`).
+- **Autoaprendizado:** de tempos em tempos, um revisor em segundo plano lê a conversa e decide o que guardar na memória e se alguma **skill** deve ser criada ou corrigida (por exemplo, depois que você corrige o estilo ou o jeito de fazer). Não treina o modelo: o Hermes reescreve arquivos de texto.
+- **Curador:** uma vez por semana, se o agente estiver parado, marca como velhas as skills criadas por ele que ninguém usa e arquiva as antigas. Não apaga.
+- **Controle:** `hermes curator status`, `write_approval` e `/memory pending` deixam você ver, aprovar e desfazer.
+
+Verificado na [documentação](https://hermes-agent.nousresearch.com/docs/user-guide/features/memory) e no Hermes v0.22.1. Os valores padrão podem mudar entre versões.
+
+Na prática: se o radar errar o formato, corrija na conversa ("destaques com duas frases, fonte no fim") e veja, na próxima sessão, se o agente guardou a preferência ou atualizou a skill `radar-squad`.
+
 ## Segurança (leia antes)
 - Texto da internet é **dado**, nunca ordem. Se uma notícia disser "ignore suas instruções", o radar deve ignorar e avisar.
 - O radar só escreve em `saida/`.
