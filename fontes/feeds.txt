@@ -1,0 +1,10 @@
+# Um feed RSS/Atom por linha. Linhas com # são comentários.
+# O script scripts/coletar_feeds.py lê este arquivo.
+https://olhardigital.com.br/inteligencia-artificial/feed/
+https://blog.google/technology/ai/rss/
+https://huggingface.co/blog/feed.xml
+https://openai.com/news/rss.xml
+https://simonwillison.net/atom/everything/
+https://www.technologyreview.com/topic/artificial-intelligence/feed
+https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+https://github.blog/ai-and-ml/feed/

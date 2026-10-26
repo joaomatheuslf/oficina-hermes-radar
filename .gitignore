@@ -1,0 +1,7 @@
+# resultados gerados em cada execução (os exemplos ficam em exemplos/)
+saida/*
+!saida/.gitkeep
+__pycache__/
+*.pyc
+.env
+*.key
