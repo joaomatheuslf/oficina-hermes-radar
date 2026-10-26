@@ -30,6 +30,25 @@ Você diz o **tema** (por exemplo, "IA agêntica na educação superior"). O rad
 
 > Exemplo real de execução em [`exemplos/`](exemplos/). Quando os feeds não têm nada novo sobre o tema, o agente avisa no topo do briefing em vez de inventar.
 
+## Instalação em um comando
+
+Pré-requisito: o [Hermes](https://hermes-agent.nousresearch.com/) já instalado (Desktop ou CLI).
+
+**Linux, Mac e WSL**
+```bash
+curl -fsSL https://raw.githubusercontent.com/joaomatheuslf/oficina-hermes-radar/main/instalar.sh | bash
+```
+
+**Windows (PowerShell)**
+```powershell
+iex (irm https://raw.githubusercontent.com/joaomatheuslf/oficina-hermes-radar/main/instalar.ps1)
+```
+
+O instalador baixa o projeto em `~/oficina-hermes-radar`, instala as 5 skills (`radar-squad`, `rss-feeds`, `grounded-citations`, `blocked-page-recovery` e `agent-reach`) e testa o coletor de feeds. Opções: `--sem-agent-reach`, `--perfil NOME` (instala num perfil separado do Hermes) e `--pasta CAMINHO`.
+Quer ler antes de rodar? Abra [`instalar.sh`](instalar.sh): são cerca de 80 linhas, em 6 passos numerados.
+
+> Testado no Linux. O instalador do Windows foi escrito mas **ainda não foi testado**; se falhar, use o passo a passo abaixo.
+
 ## As três peças
 
 <p align="center"><img src="docs/img/slide-pecas.jpg" alt="Slide: três peças, três papéis" width="640"></p>
